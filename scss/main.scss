@@ -1,0 +1,359 @@
+/*!
+ * Start Bootstrap - Scrolling Nav (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+/* IMPORTS */
+
+@import 'layout';
+@import 'overlay';
+
+/* FONTS */
+
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+body {
+    width: 100%;
+    height: 100%;
+    @include body-padding;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+/* NAV */
+
+.slide-out-nav {
+    padding: 5px;
+    margin-top: 60px;
+    position: fixed;
+    background-color: #F9D99A;
+    text-align: center;
+}
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 999; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+/* Google Icons */
+
+.material-icons.md-light { 
+    color: rgba(255, 255, 255, 1); 
+    vertical-align: middle;
+}
+
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+/* LAYOUT */
+
+.row-centered {
+    text-align: center;
+}
+
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:center;
+    /* inline-block space fix */
+    margin-right:-4px;
+    padding-left: 320px;
+    padding-right: 320px;
+}
+
+.col-quote {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:center;
+    /* inline-block space fix */
+    margin-right:-4px;
+    padding-left: 250px;
+    padding-right: 250px;
+}
+
+/* INTRO */
+
+.intro-section {
+    height: 100%;
+    background: url(/img/header-bg-overlay.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: center;
+    padding-top: 20%;
+}
+
+.intro-section-about {
+    height: 100%;
+    background: url(/img/about-page-bg-overlay.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: center;
+    padding-top: 20%;
+}
+
+.intro-section-locations {
+    height: 100%;
+    background: url(/img/locations-header.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: center;
+    padding-top: 20%;
+}
+
+
+/* ABOUT */
+
+.about-section {
+    height: 100%;
+    padding-top: 50px;
+    text-align: center;
+    background: #fff;
+}
+
+.transi-logo {
+    width:215px;
+    height:130px;
+}
+
+.services-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: #fff;
+}
+
+.contact-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: #eee;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+/* FIND OUT MORE */
+
+.grey-bg {
+    background-color: #979BA3;
+    width: 100%;
+    height: 320px;
+    margin-top: 0px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.light-grey-bg {
+    background-color: #F5F5F5;
+    width: 100%;
+    height: 320px;
+    margin-top: 0px;
+    text-align: center;
+}
+
+/* HEADINGS */
+
+.h1-white {
+    color: #fff;
+    font-size: 48px;
+    font-weight: normal;
+    letter-spacing: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* IMG */
+
+.portrait {
+    padding-top: 100px;
+    width: 375.601px;
+    height: 563px;
+    margin: 10px;
+}
+
+.sculpting {
+    background-image: url(/img/sculpting.jpg);
+    background-size: cover;
+    margin: 5px;
+    width: 375px;
+    height: 631px;
+}
+
+/* OTHER */
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    
+}
+
+.h2-navy {
+    padding-top: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: normal;
+    color: #2A2D3B;
+    text-transform: uppercase;
+}
+
+.h2-quote {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: normal;
+    color: #666666;
+    text-transform: uppercase;
+}
+
+hr {
+    width: 230px;
+    margin: 14px auto 14px auto;
+}
+
+a, a:visited, a:hover, a:link, a:active {
+    text-decoration: none;
+    color: #fff;
+}
+
+a.navy {
+    text-decoration: none;
+    color: #2A2D3B;
+}
+
+.lead-first-para {
+    font-family: 'Lato', sans-serif;
+    color: #666666;
+    font-size: 14px;
+    padding-top: 50px;
+    font-weight: normal;
+}
+
+.lead-white {
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+    font-size: 14px;
+    padding-top: 50px;
+    font-weight: normal;
+}
+
+.lead-other-para {
+    font-family: 'Lato', sans-serif;
+    color: #666666;
+    font-size: 14px;
+    padding-top: 25px;
+    font-weight: normal;
+}
+
+.lead-italic {
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.cta-navy {
+    font-family: 'Roboto', sans-serif;
+    color: #2A2D3B;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding-top: 50px;
+    letter-spacing: 1px;
+}
+
+.fa {
+    padding: 5px;
+}
+
+#about-page-cta {
+    font-family: 'Lato',sans-serif;
+    font-size: 18px;
+    padding-top: 25px;
+    padding-bottom: 50px;
+}
+
+.archive-list {
+    text-align: left;
+}
+
+/* LOCATIONS */
+
+#map {
+    height: 400px;
+    width: 50%;
+}
+
+#map-two {
+    margin-top: 100px;
+    height: 400px;
+    width: 50%;
+}
+
+#archive {
+    margin-top: 50px;
+}
+
+/* FOOTER */
+
+footer {
+    @include body-padding;
+    background-color: #2A2D3B;
+    color: #fff;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* MEDIA QUARIES */
+
+@import "media-quaries";

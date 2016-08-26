@@ -1,0 +1,479 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+/*
+ * Start Bootstrap - Scrolling Nav (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+/* IMPORTS */
+/* line 1, ../scss/_overlay.scss */
+.image {
+  margin-top: 90px;
+  position: relative;
+  background-size: cover;
+  width: 365px;
+  height: 506px;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  font-size: 30px;
+}
+
+/* line 11, ../scss/_overlay.scss */
+.image img {
+  width: 100%;
+  vertical-align: top;
+}
+
+/* line 15, ../scss/_overlay.scss */
+.image:after, .image:before {
+  position: absolute;
+  opacity: 0;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+
+/* line 21, ../scss/_overlay.scss */
+.image:after {
+  content: '\A';
+  width: 365px;
+  height: 506px;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/* line 28, ../scss/_overlay.scss */
+.image:before {
+  content: attr(data-content);
+  width: 100%;
+  color: #fff;
+  z-index: 1;
+  bottom: 50%;
+  padding: 4px 10px;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+/* line 40, ../scss/_overlay.scss */
+.image:hover:after, .image:hover:before {
+  opacity: 1;
+}
+
+/* FONTS */
+/* line 17, ../scss/main.scss */
+body {
+  width: 100%;
+  height: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+/* line 23, ../scss/main.scss */
+html {
+  width: 100%;
+  height: 100%;
+}
+
+/* NAV */
+/* line 30, ../scss/main.scss */
+.slide-out-nav {
+  padding: 5px;
+  margin-top: 60px;
+  position: fixed;
+  background-color: #F9D99A;
+  text-align: center;
+}
+
+/* line 37, ../scss/main.scss */
+.sidenav {
+  height: 100%;
+  /* 100% Full-height */
+  width: 0;
+  /* 0 width - change this with JavaScript */
+  position: fixed;
+  /* Stay in place */
+  z-index: 999;
+  /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #111;
+  /* Black*/
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 60px;
+  /* Place content 60px from the top */
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+/* line 51, ../scss/main.scss */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+/* line 61, ../scss/main.scss */
+.sidenav a:hover, .offcanvas a:focus {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+/* line 66, ../scss/main.scss */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  /* line 76, ../scss/main.scss */
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  /* line 77, ../scss/main.scss */
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+/* Google Icons */
+/* line 82, ../scss/main.scss */
+.material-icons.md-light {
+  color: white;
+  vertical-align: middle;
+}
+
+/* line 87, ../scss/main.scss */
+.material-icons.md-light.md-inactive {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* LAYOUT */
+/* line 91, ../scss/main.scss */
+.row-centered {
+  text-align: center;
+}
+
+/* line 95, ../scss/main.scss */
+.col-centered {
+  display: inline-block;
+  float: none;
+  /* reset the text-align */
+  text-align: center;
+  /* inline-block space fix */
+  margin-right: -4px;
+  padding-left: 320px;
+  padding-right: 320px;
+}
+
+/* line 106, ../scss/main.scss */
+.col-quote {
+  display: inline-block;
+  float: none;
+  /* reset the text-align */
+  text-align: center;
+  /* inline-block space fix */
+  margin-right: -4px;
+  padding-left: 250px;
+  padding-right: 250px;
+}
+
+/* INTRO */
+/* line 119, ../scss/main.scss */
+.intro-section {
+  height: 100%;
+  background: url(/img/header-bg-overlay.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  padding-top: 20%;
+}
+
+/* line 130, ../scss/main.scss */
+.intro-section-about {
+  height: 100%;
+  background: url(/img/about-page-bg-overlay.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  padding-top: 20%;
+}
+
+/* line 141, ../scss/main.scss */
+.intro-section-locations {
+  height: 100%;
+  background: url(/img/locations-header.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  padding-top: 20%;
+}
+
+/* ABOUT */
+/* line 155, ../scss/main.scss */
+.about-section {
+  height: 100%;
+  padding-top: 50px;
+  text-align: center;
+  background: #fff;
+}
+
+/* line 162, ../scss/main.scss */
+.transi-logo {
+  width: 215px;
+  height: 130px;
+}
+
+/* line 167, ../scss/main.scss */
+.services-section {
+  height: 100%;
+  padding-top: 150px;
+  text-align: center;
+  background: #fff;
+}
+
+/* line 174, ../scss/main.scss */
+.contact-section {
+  height: 100%;
+  padding-top: 150px;
+  text-align: center;
+  background: #eee;
+}
+
+/* line 181, ../scss/main.scss */
+figure {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+/* FIND OUT MORE */
+/* line 190, ../scss/main.scss */
+.grey-bg {
+  background-color: #979BA3;
+  width: 100%;
+  height: 320px;
+  margin-top: 0px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+}
+
+/* line 200, ../scss/main.scss */
+.light-grey-bg {
+  background-color: #F5F5F5;
+  width: 100%;
+  height: 320px;
+  margin-top: 0px;
+  text-align: center;
+}
+
+/* HEADINGS */
+/* line 210, ../scss/main.scss */
+.h1-white {
+  color: #fff;
+  font-size: 48px;
+  font-weight: normal;
+  letter-spacing: 5px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* IMG */
+/* line 220, ../scss/main.scss */
+.portrait {
+  padding-top: 100px;
+  width: 375.601px;
+  height: 563px;
+  margin: 10px;
+}
+
+/* line 227, ../scss/main.scss */
+.sculpting {
+  background-image: url(/img/sculpting.jpg);
+  background-size: cover;
+  margin: 5px;
+  width: 375px;
+  height: 631px;
+}
+
+/* OTHER */
+/* line 237, ../scss/main.scss */
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+}
+
+/* line 243, ../scss/main.scss */
+.h2-navy {
+  padding-top: 50px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  font-weight: normal;
+  color: #2A2D3B;
+  text-transform: uppercase;
+}
+
+/* line 252, ../scss/main.scss */
+.h2-quote {
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  font-weight: normal;
+  color: #666666;
+  text-transform: uppercase;
+}
+
+/* line 260, ../scss/main.scss */
+hr {
+  width: 230px;
+  margin: 14px auto 14px auto;
+}
+
+/* line 265, ../scss/main.scss */
+a, a:visited, a:hover, a:link, a:active {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* line 270, ../scss/main.scss */
+a.navy {
+  text-decoration: none;
+  color: #2A2D3B;
+}
+
+/* line 275, ../scss/main.scss */
+.lead-first-para {
+  font-family: 'Lato', sans-serif;
+  color: #666666;
+  font-size: 14px;
+  padding-top: 50px;
+  font-weight: normal;
+}
+
+/* line 283, ../scss/main.scss */
+.lead-white {
+  font-family: 'Lato', sans-serif;
+  color: #fff;
+  font-size: 14px;
+  padding-top: 50px;
+  font-weight: normal;
+}
+
+/* line 291, ../scss/main.scss */
+.lead-other-para {
+  font-family: 'Lato', sans-serif;
+  color: #666666;
+  font-size: 14px;
+  padding-top: 25px;
+  font-weight: normal;
+}
+
+/* line 299, ../scss/main.scss */
+.lead-italic {
+  font-family: 'Lato', sans-serif;
+  color: #fff;
+  font-size: 14px;
+  font-style: italic;
+}
+
+/* line 306, ../scss/main.scss */
+.cta-navy {
+  font-family: 'Roboto', sans-serif;
+  color: #2A2D3B;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding-top: 50px;
+  letter-spacing: 1px;
+}
+
+/* line 315, ../scss/main.scss */
+.fa {
+  padding: 5px;
+}
+
+/* line 319, ../scss/main.scss */
+#about-page-cta {
+  font-family: 'Lato',sans-serif;
+  font-size: 18px;
+  padding-top: 25px;
+  padding-bottom: 50px;
+}
+
+/* line 326, ../scss/main.scss */
+.archive-list {
+  text-align: left;
+}
+
+/* LOCATIONS */
+/* line 332, ../scss/main.scss */
+#map {
+  height: 400px;
+  width: 50%;
+}
+
+/* line 337, ../scss/main.scss */
+#map-two {
+  margin-top: 100px;
+  height: 400px;
+  width: 50%;
+}
+
+/* line 343, ../scss/main.scss */
+#archive {
+  margin-top: 50px;
+}
+
+/* FOOTER */
+/* line 349, ../scss/main.scss */
+footer {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #2A2D3B;
+  color: #fff;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* MEDIA QUARIES */
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
+/*==========  Mobile First Method  ==========*/
+/* Custom, iPhone Retina */
+/* Extra Small Devices, Phones */
+/* Small Devices, Tablets */
+/* Medium Devices, Desktops */
+/* Large Devices, Wide Screens */
+/*==========  Non-Mobile First Method  ==========*/
+/* Large Devices, Wide Screens */
+/* Medium Devices, Desktops */
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  /* line 52, ../scss/_media-quaries.scss */
+  body {
+    padding: 0px;
+  }
+}
+/* Extra Small Devices, Phones */
+/* Custom, iPhone Retina */

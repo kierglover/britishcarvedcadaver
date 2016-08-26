@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Scrolling Nav - Start Bootstrap Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/main.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+  
+    <!-- NAV -->
+    
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="locations.html">Locations</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+        </div>
+        
+    <!-- /.NAV -->
+    
+    <!-- Intro Section -->
+    <section id="intro" class="intro-section-locations">
+       
+    <div class="slide-out-nav">
+        <!-- Use any element to open the sidenav -->
+        <span onclick="openNav()"><i class="material-icons md-light">menu</i></span>
+    </div>
+       
+        <div class="container-fluid">
+            <div class="row-centered">
+                <div class="col-lg-12">
+                    <h1 class="h1-white">British Carved Cadavers</h1>
+                    <hr>
+                    <h2><a class="page-scroll" href="#about">LOCATIONS</a></h2>
+                    <p class="lead-italic">Where to find carved cadavers</p>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Content Section -->
+        <div class="container-fluid">
+            <div class="row-center">
+               <div class="col-sm-12 col-quote" id="about">
+                <hr>
+                    <h2 class="h2-quote">DONEC FACILISIS TORTOR UT AUGUE LACINIA, AT VIVERRA EST SEMPER. SED SAPIEN METUS, SCELERISQUE NEC PHARETRA ID, TEMPOR A TORTOR. PELLENTESQUE NON DIGNISSIM NEQUE.</h2>
+                <hr>
+               </div>
+            </div>
+        
+                <div class="col-lg-12 col-centered">
+                   <p class="lead-first-para">Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque. Ut porta viverra est, ut dignissim elit elementum ut. Nunc vel rhoncus nibh, ut tincidunt turpis. Integer ac enim pellentesque, adipiscing metus id, pharetra odio. Donec bibendum nunc sit amet tortor scelerisque luctus et.</p>
+                </div>
+            <div class="row-centered">
+                <div class="col-lg-12 col-centered" id="map-two">
+                    <script>
+                        function initMap() {
+                        var mapDiv = document.getElementById('map-two');
+                        var map = new google.maps.Map(mapDiv, {
+                        center: {lat: 44.540, lng: -78.546},
+                        zoom: 8
+                            });
+                        }
+                    </script>
+                </div>
+            </div>
+            <div class="row-centered">
+                
+               <div class="col-sm-12 col-quote" id="about">
+                <hr>
+                    <h2 class="h2-quote">CADAVER MEMORIAL'S ARCHIVE</h2>
+                <hr>
+               </div>
+                
+            </div>
+            <div class="row-centered" id="archive">
+                <div class="col-sm-12 col-centered">
+                   <div class="col-sm-2 col-sm-offset-1">
+                        <dl class="archive-list">
+                            <dt>A</dt>
+                            <dd><a class=navy href="#item1">a item</a></dd>
+                            <dd><a class=navy href="#item1">a item</a></dd>
+                            <dd><a class=navy href="#item1">a item</a></dd>
+                        </dl>
+                        <dl class="archive-list">
+                            <dt>B</dt>
+                            <dd><a class=navy href="#item1">b item</a></dd>
+                            <dd><a class=navy href="#item1">b item</a></dd>
+                            <dd><a class=navy href="#item1">b item</a></dd>
+                        </dl>
+                        <dl class="archive-list">
+                            <dt>C</dt>
+                            <dd><a class=navy href="#item1">c item</a></dd>
+                            <dd><a class=navy href="#item1">c item</a></dd>
+                            <dd><a class=navy href="#item1">c item</a></dd>
+                        </dl>
+                    </div>
+                   <div class="col-sm-2 col-sm-offset-1">
+                        <dl class="archive-list">
+                            <dt>D</dt>
+                            <dd><a class=navy href="#item1">d item</a></dd>
+                            <dd><a class=navy href="#item1">d item</a></dd>
+                            <dd><a class=navy href="#item1">d item</a></dd>
+                        </dl>
+                        <dl class="archive-list">
+                            <dt>E</dt>
+                            <dd><a class=navy href="#item1">e item</a></dd>
+                            <dd><a class=navy href="#item1">e item</a></dd>
+                            <dd><a class=navy href="#item1">e item</a></dd>
+                        </dl>
+                        <dl class="archive-list">
+                            <dt>F</dt>
+                            <dd><a class=navy href="#item1">f item</a></dd>
+                            <dd><a class=navy href="#item1">f item</a></dd>
+                            <dd><a class=navy href="#item1">f item</a></dd>
+                        </dl>
+                    </div>
+                   <div class="col-sm-2 col-sm-offset-1">
+                        <dl class="archive-list">
+                            <dt>H</dt>
+                            <dd>h item</dd>
+                            <dd>h item</dd>
+                            <dd>h item</dd>
+                        </dl>
+                        <dl class="archive-list">
+                            <dt>K</dt>
+                            <dd>k item</dd>
+                            <dd>k item</dd>
+                            <dd>k item</dd>
+                        </dl>
+                        <dl class="archive-list">
+                            <dt>L</dt>
+                            <dd>l item</dd>
+                            <dd>l item</dd>
+                            <dd>l item</dd>
+                        </dl>
+                    </div>
+                   <div class="col-sm-2 col-sm-offset-1">
+                        <dl class="archive-list">
+                            <dt>P</dt>
+                            <dd>p item</dd>
+                            <dd>p item</dd>
+                            <dd>p item</dd>
+                        </dl>
+                        <dl class="archive-list">
+                            <dt>S</dt>
+                            <dd>s item</dd>
+                            <dd>s item</dd>
+                            <dd>s item</dd>
+                        </dl>
+                        <dl class="archive-list">
+                            <dt>W</dt>
+                            <dd>w item</dd>
+                            <dd>w item</dd>
+                            <dd>w item</dd>
+                        </dl>
+                    </div>
+                   <div class="col-sm-2 col-sm-offset-1">
+                        <dl class="archive-list">
+                            <dt>Y</dt>
+                            <dd>y item</dd>
+                            <dd>y item</dd>
+                            <dd>y item</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div><!-- ./row -->
+        <div class="container">
+            <div class="row-centered">
+                <div class="col-sm-12" id="about-page-cta">
+                    <i class="fa fa-arrow-circle-left fa-1x" aria-hidden="true"><a class="navy" href="index.html"> Back to main site</a></i>
+                </div>
+            </div>
+        </div>
+            
+    <!-- FOOTER -->
+        <footer>
+            <div class="container-fluid">
+                <div class="row-centered">
+                    <div class="col-sm-12 col-centered">
+                       <div class="text-wrapper">
+                            <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+                            <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+                            <i class="fa fa-pinterest fa-2x" aria-hidden="true"></i>
+                            <p class="lead-white">Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque. Ut porta viverra est, ut dignissim elit elementum ut. Nunc vel rhoncus nibh, ut tincidunt turpis. Integer ac enim pellentesque, adipiscing metus id, pharetra odio. Donec bibendum nunc sit amet tortor scelerisque luctus et.</p>
+                            <p class="lead-white"><a href="http://www.simplybespoke.co">SITE BY SIMPLYBESPOKE</a></p>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
+    
+    <!-- NAV -->
+    <script src="js/nav.js"></script>
+    
+    <!-- OVERLAY -->
+    <script src="js/overlay.js"></script>
+    
+    <!-- GMAPS -->
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBufjXgPRxJNiWANO9bX6vpL9OtIDOJBpc&callback=initMap">
+    </script>
+
+</body>
+
+
+</html>
