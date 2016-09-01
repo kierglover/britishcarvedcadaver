@@ -1,0 +1,28 @@
+{
+  "name": "britishcarvedcadaver",
+  "version": "1.0.0",
+  "description": "Repo for British Carved Cadaver's web dev project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kiroid123/britishcarvedcadaver.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kiroid123/britishcarvedcadaver/issues"
+  },
+  "homepage": "https://github.com/kiroid123/britishcarvedcadaver#readme",
+  "dependencies": {
+    "grunt": "^1.0.1"
+  },
+  "devDependencies": {
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^1.2.1"
+  }
+}
