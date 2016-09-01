@@ -2,11 +2,13 @@
 module.exports = function(grunt) {
     
     grunt.initConfig({
+        
         sass: {
             dist: {
             files:{'css/main.css': 'sass/main.scss'}
             }
         },
+        
         concat: {
             js: {
             src: ['js/bootstrap.min.js', 'js/jquery.easing.js', 'js/nav.js', 'js/scrolling-nav.js'],
@@ -17,7 +19,24 @@ module.exports = function(grunt) {
             dest: 'dist/css/styles.css',
             },
         },
+        
+        cssmin: {
+            target: {
+                files: [{
+                expand: true,
+                cwd: 'css/',
+                src: ['*.css', '!*.min.css'],
+                dest: 'dist/css',
+                ext: '.min.css'
+                }]
+            }
+        },
+        
         watch: {
+            sass: {
+                files: ['sass/*.scss'],
+                tasks: ['sass', 'cssmin']
+            },
             js: {
                 files: ['js/**/*.js'],
                 tasks: ['concat:js'],
@@ -29,9 +48,10 @@ module.exports = function(grunt) {
         },
 });
     
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.registerTask('default', ['concat', 'watch', 'sass']);
+    grunt.registerTask('default', ['sass' , 'concat', 'cssmin', 'watch']);
     
 };
