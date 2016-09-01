@@ -8,6 +8,8 @@
 
 @import 'layout';
 @import 'overlay';
+@import 'hover';
+@import 'animate';
 
 /* FONTS */
 
@@ -296,6 +298,9 @@ a, a:visited, a:hover, a:link, a:active {
 }
 
 a.navy {
+    padding: 10px;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
     text-decoration: none;
     color: #2A2D3B;
 }
@@ -305,6 +310,7 @@ a.navy {
     color: #666666;
     font-size: 14px;
     padding-top: 50px;
+    padding-bottom: 50px;
     font-weight: normal;
 }
 
