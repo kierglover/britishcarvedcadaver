@@ -9693,8 +9693,20 @@ html {
   padding-top: 20%;
 }
 
+/* line 193, ../scss/main.scss */
+.intro-section-anatomy {
+  height: 100%;
+  background: url(/img/anatomy-bg-overlay.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  padding-top: 20%;
+}
+
 /* ABOUT */
-/* line 197, ../scss/main.scss */
+/* line 207, ../scss/main.scss */
 .about-section {
   height: 100%;
   padding-top: 50px;
@@ -9702,13 +9714,13 @@ html {
   background: #fff;
 }
 
-/* line 204, ../scss/main.scss */
+/* line 214, ../scss/main.scss */
 .transi-logo {
   width: 215px;
   height: 130px;
 }
 
-/* line 209, ../scss/main.scss */
+/* line 219, ../scss/main.scss */
 .services-section {
   height: 100%;
   padding-top: 150px;
@@ -9716,7 +9728,7 @@ html {
   background: #fff;
 }
 
-/* line 216, ../scss/main.scss */
+/* line 226, ../scss/main.scss */
 .contact-section {
   height: 100%;
   padding-top: 150px;
@@ -9724,7 +9736,7 @@ html {
   background: #eee;
 }
 
-/* line 223, ../scss/main.scss */
+/* line 233, ../scss/main.scss */
 figure {
   margin: 0;
   padding: 0;
@@ -9733,7 +9745,7 @@ figure {
 }
 
 /* FIND OUT MORE */
-/* line 232, ../scss/main.scss */
+/* line 242, ../scss/main.scss */
 .grey-bg {
   background-color: #979BA3;
   width: 100%;
@@ -9744,7 +9756,7 @@ figure {
   text-align: center;
 }
 
-/* line 242, ../scss/main.scss */
+/* line 252, ../scss/main.scss */
 .light-grey-bg {
   background-color: #F5F5F5;
   width: 100%;
@@ -9754,7 +9766,7 @@ figure {
 }
 
 /* HEADINGS */
-/* line 252, ../scss/main.scss */
+/* line 262, ../scss/main.scss */
 .h1-white {
   color: #fff;
   font-size: 48px;
@@ -9764,7 +9776,7 @@ figure {
 }
 
 /* IMG */
-/* line 262, ../scss/main.scss */
+/* line 272, ../scss/main.scss */
 .portrait {
   padding-top: 100px;
   width: 375.601px;
@@ -9772,7 +9784,7 @@ figure {
   margin: 10px;
 }
 
-/* line 269, ../scss/main.scss */
+/* line 279, ../scss/main.scss */
 .sculpting {
   background-image: url(/img/sculpting.jpg);
   background-size: cover;
@@ -9782,13 +9794,13 @@ figure {
 }
 
 /* OTHER */
-/* line 279, ../scss/main.scss */
+/* line 289, ../scss/main.scss */
 h2 {
   font-family: 'Roboto', sans-serif;
   font-size: 30px;
 }
 
-/* line 285, ../scss/main.scss */
+/* line 295, ../scss/main.scss */
 .h2-navy {
   padding-top: 50px;
   font-family: 'Roboto', sans-serif;
@@ -9798,7 +9810,7 @@ h2 {
   text-transform: uppercase;
 }
 
-/* line 294, ../scss/main.scss */
+/* line 304, ../scss/main.scss */
 .h2-quote {
   font-family: 'Roboto', sans-serif;
   font-size: 30px;
@@ -9807,19 +9819,19 @@ h2 {
   text-transform: uppercase;
 }
 
-/* line 302, ../scss/main.scss */
+/* line 312, ../scss/main.scss */
 hr {
   width: 230px;
   margin: 14px auto 14px auto;
 }
 
-/* line 307, ../scss/main.scss */
+/* line 317, ../scss/main.scss */
 a, a:visited, a:hover, a:link, a:active {
   text-decoration: none;
   color: #fff;
 }
 
-/* line 312, ../scss/main.scss */
+/* line 322, ../scss/main.scss */
 a.navy {
   padding: 10px;
   font-family: 'Lato', sans-serif;
@@ -9828,7 +9840,7 @@ a.navy {
   color: #2A2D3B;
 }
 
-/* line 320, ../scss/main.scss */
+/* line 330, ../scss/main.scss */
 .lead-first-para {
   font-family: 'Lato', sans-serif;
   color: #666666;
@@ -9838,7 +9850,7 @@ a.navy {
   font-weight: normal;
 }
 
-/* line 329, ../scss/main.scss */
+/* line 339, ../scss/main.scss */
 .lead-white {
   font-family: 'Lato', sans-serif;
   color: #fff;
@@ -9847,7 +9859,7 @@ a.navy {
   font-weight: normal;
 }
 
-/* line 337, ../scss/main.scss */
+/* line 347, ../scss/main.scss */
 .lead-other-para {
   font-family: 'Lato', sans-serif;
   color: #666666;
@@ -9856,7 +9868,7 @@ a.navy {
   font-weight: normal;
 }
 
-/* line 345, ../scss/main.scss */
+/* line 355, ../scss/main.scss */
 .lead-italic {
   font-family: 'Lato', sans-serif;
   color: #fff;
@@ -9864,7 +9876,7 @@ a.navy {
   font-style: italic;
 }
 
-/* line 352, ../scss/main.scss */
+/* line 362, ../scss/main.scss */
 .cta-navy {
   font-family: 'Roboto', sans-serif;
   color: #2A2D3B;
@@ -9874,12 +9886,12 @@ a.navy {
   letter-spacing: 1px;
 }
 
-/* line 361, ../scss/main.scss */
+/* line 371, ../scss/main.scss */
 .fa {
   padding: 5px;
 }
 
-/* line 365, ../scss/main.scss */
+/* line 375, ../scss/main.scss */
 #about-page-cta {
   font-family: 'Lato',sans-serif;
   font-size: 18px;
@@ -9887,32 +9899,32 @@ a.navy {
   padding-bottom: 50px;
 }
 
-/* line 372, ../scss/main.scss */
+/* line 382, ../scss/main.scss */
 .archive-list {
   text-align: left;
 }
 
 /* LOCATIONS */
-/* line 378, ../scss/main.scss */
+/* line 388, ../scss/main.scss */
 #map {
   height: 400px;
   width: 50%;
 }
 
-/* line 383, ../scss/main.scss */
+/* line 393, ../scss/main.scss */
 #map-two {
   margin-top: 100px;
   height: 400px;
   width: 50%;
 }
 
-/* line 389, ../scss/main.scss */
+/* line 399, ../scss/main.scss */
 #archive {
   margin-top: 50px;
 }
 
 /* FOOTER */
-/* line 395, ../scss/main.scss */
+/* line 405, ../scss/main.scss */
 footer {
   padding-left: 15px;
   padding-right: 15px;
