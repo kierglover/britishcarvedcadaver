@@ -1,0 +1,14 @@
+@mixin h1-styling {
+    font-size: 48px;
+    font-weight: normal;
+    letter-spacing: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+@mixin h2-styling {
+    text-transform: uppercase;
+    padding-top: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: normal;
+}

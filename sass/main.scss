@@ -10,6 +10,7 @@
 @import 'overlay';
 @import 'hover';
 @import 'animate';
+@import 'fonts';
 
 /* FONTS */
 
@@ -259,12 +260,14 @@ figure {
 
 /* HEADINGS */
 
+.h1-navy {
+    color: #2A2D3B;
+    @include h1-styling;
+}
+
 .h1-white {
     color: #fff;
-    font-size: 48px;
-    font-weight: normal;
-    letter-spacing: 5px;
-    font-family: 'Roboto', sans-serif;
+    @include h1-styling;
 }
 
 /* IMG */
@@ -293,20 +296,13 @@ h2 {
 }
 
 .h2-navy {
-    padding-top: 50px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 30px;
-    font-weight: normal;
     color: #2A2D3B;
-    text-transform: uppercase;
+    @include h2-styling;
 }
 
 .h2-quote {
-    font-family: 'Roboto', sans-serif;
-    font-size: 30px;
-    font-weight: normal;
     color: #666666;
-    text-transform: uppercase;
+    @include h2-styling;
 }
 
 hr {
@@ -331,8 +327,8 @@ a.navy {
     font-family: 'Lato', sans-serif;
     color: #666666;
     font-size: 14px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     font-weight: normal;
 }
 
@@ -348,7 +344,8 @@ a.navy {
     font-family: 'Lato', sans-serif;
     color: #666666;
     font-size: 14px;
-    padding-top: 25px;
+    margin-top: 10px;
+    margin-bottom: 50px;
     font-weight: normal;
 }
 
@@ -364,7 +361,7 @@ a.navy {
     color: #2A2D3B;
     font-size: 18px;
     text-transform: uppercase;
-    padding-top: 50px;
+    margin-top: 50px;
     letter-spacing: 1px;
 }
 
