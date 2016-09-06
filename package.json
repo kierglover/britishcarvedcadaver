@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kiroid123/britishcarvedcadaver.git"
+    "url": "git+https://github.com/kierglover/britishcarvedcadaver.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/kiroid123/britishcarvedcadaver/issues"
+    "url": "https://github.com/kierglover/britishcarvedcadaver/issues"
   },
-  "homepage": "https://github.com/kiroid123/britishcarvedcadaver#readme",
+  "homepage": "https://github.com/kierglover/britishcarvedcadaver#readme",
   "dependencies": {
     "grunt": "^1.0.1"
   },
@@ -24,6 +24,7 @@
     "grunt-contrib-cssmin": "^1.0.2",
     "grunt-contrib-sass": "^1.0.0",
     "grunt-contrib-watch": "^1.0.0",
+    "grunt-php": "^1.5.1",
     "grunt-sass": "^1.2.1"
   }
 }

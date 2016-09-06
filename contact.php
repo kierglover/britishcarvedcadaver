@@ -116,7 +116,7 @@
             $name = $_POST['name'];
             $email = $_POST['email'];
             $message = $_POST['message'];
-            $from = 'From: MomoFunctions'; 
+            $from = 'From: BritishCarvedCadaversSite'; 
             $to = 'kirreh.g@gmail.com'; 
             $subject = 'Hello';
                 
@@ -136,7 +136,7 @@
         <!-- CONTACT FORM -->
         <div class="container">
             <div class="row" id="form-row">
-    			<form role="form" action="index.php" method="post">
+    			<form role="form" action="contact.php" method="post">
 				<div class="col-sm-12 col-centered">
 					<div class="form-group">
 						<label for="InputName">Your Name</label>

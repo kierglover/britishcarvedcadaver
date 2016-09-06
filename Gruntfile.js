@@ -3,6 +3,17 @@ module.exports = function(grunt) {
     
     grunt.initConfig({
         
+    php: {
+        dist: {
+            options: {
+                port: 5000,
+                base:".",
+                open:true,
+                keepalive:true,
+            }
+        }
+    },
+        
         sass: {
             dist: {
             files:{'css/main.css': 'sass/main.scss'}
@@ -31,7 +42,7 @@ module.exports = function(grunt) {
                 }]
             }
         },
-   
+        
         watch: {
             sass: {
                 files: ['sass/*.scss'],
@@ -46,8 +57,10 @@ module.exports = function(grunt) {
                 tasks: ['concat:css'],
             },
         },
+   
 });
     
+    grunt.loadNpmTasks('grunt-php');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-concat');
