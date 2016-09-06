@@ -11,6 +11,7 @@
 @import 'hover';
 @import 'animate';
 @import 'fonts';
+@import 'form';
 
 /* FONTS */
 
@@ -306,8 +307,14 @@ h2 {
 }
 
 hr {
+    color: #979797;
     width: 230px;
     margin: 14px auto 14px auto;
+}
+
+hr.long {
+    color: #979797;
+    width: 100%;
 }
 
 a, a:visited, a:hover, a:link, a:active {
@@ -388,9 +395,10 @@ a.navy {
 }
 
 #map-two {
+    @include body-padding;
     margin-top: 100px;
     height: 400px;
-    width: 50%;
+    
 }
 
 #archive {

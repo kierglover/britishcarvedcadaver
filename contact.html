@@ -43,8 +43,7 @@
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="locations.html">Locations</a>
-            <a href="#">Clients</a>
-            <a href="#">Contact</a>
+            <a href="contact.html">Contact</a>
         </div>
         
     <!-- /.NAV -->
@@ -62,29 +61,102 @@
                     <h2 class="h2-navy">contact</h2>
                 </div>
             </div>
-            <div class="row-center">
+            <div class="row">
                <div class="col-sm-6" id="about">
                    <h2 class="h2-navy">talk to us</h2>
                    <p class="lead-first-para">Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque.Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque.</p>
                    <p class="lead-other-para">Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque.Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque.</p>
                    <p class="lead-other-para">Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque.Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque.</p>
-                   <div class="row-center">
-                       <div class="col-sm-6">
+                   <div class="row-centered">
+                       <div class="col-sm-12">
                            <p class="cta-navy"><a class="navy" href="mailto:kirreh.g@gmail.com">send an email</a></p>
                        </div>
                    </div>
                </div>
-               <div class="col-sm-6">
-                    <!-- ADD GMAPS -->
+               <div class="col-sm-6" id="map-two">
+                    <script>
+                        function initMap() {
+                        var mapDiv = document.getElementById('map-two');
+                        var map = new google.maps.Map(mapDiv, {
+                        center: {lat: 44.540, lng: -78.546},
+                        zoom: 8
+                            });
+                        }
+                    </script>
                </div>
             </div> <!-- ./row -->
+        </div><!-- ./container -->
             
+        <!-- CTA -->    
+        <div class="container">
             <div class="row-centered">
-                
                 <div class="col-sm-12" id="about-page-cta">
-                   <a href="index.html" class="hvr-icon-back"></a>
+                   <div class="hvr-skew-backward">
+                    <i class="fa fa-arrow-circle-left fa-1x hvr-skew-backward" aria-hidden="true"><a href="index.html" class="navy">Back to main site</a></i>
+                    </div>
                 </div>
+            </div>
+        </div>
+        <!-- ./CTA -->
+        
+        <hr class="long">
+        
+        <!-- FORM FUNCTIONALITY -->
+        
+        <?php
+            $name = $_POST['name'];
+            $email = $_POST['email'];
+            $message = $_POST['message'];
+            $from = 'From: MomoFunctions'; 
+            $to = 'kirreh.g@gmail.com'; 
+            $subject = 'Hello';
                 
+            $body = "From: $name\n E-Mail: $email\n Message:\n $message";
+                
+            if ($_POST['submit']) {
+                    if (mail ($to, $subject, $body, $from)) { 
+                        echo '<p>Your message has been sent!</p>';
+                    } else { 
+                        echo '<p>Something went wrong, go back and try again!</p>'; 
+                        }
+            }
+        ?>
+        
+        <!-- ./FORM FUNCTIONALITY -->
+			
+        <!-- CONTACT FORM -->
+        <div class="container">
+            <div class="row" id="form-row">
+    			<form role="form" action="index.php" method="post">
+				<div class="col-sm-12 col-centered">
+					<div class="form-group">
+						<label for="InputName">Your Name</label>
+						<div class="input-group">
+							<input type="text" class="form-control" name="name" placeholder="Enter Name" required="required">
+							<span class="input-group-addon"></span>
+						</div>
+					</div>
+					
+					<div class="form-group">
+						<label for="InputEmail">Your Email</label>
+						<div class="input-group">
+							<input type="email" class="form-control" id="email" name="email" placeholder="Enter Email" required="required">
+							<span class="input-group-addon"></span>
+						</div>
+					</div>
+					
+					<div class="form-group">
+						<label for="InputMessage">Message</label>
+						<div class="input-group">
+							<textarea name="message" id="message" class="form-control" rows="5" placeholder="Enter Message" required="required"></textarea>
+							<span class="input-group-addon"></span>
+						</div>
+					</div>
+
+					<input id="submit" name="submit" type="submit" value="Submit Feedback" class="btn btn-link wow fadeIn" data-wow-delay="0.8s">
+					
+				</div>
+			    </form>
             </div>
         </div>
         
