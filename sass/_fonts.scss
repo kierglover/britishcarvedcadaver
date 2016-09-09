@@ -2,13 +2,13 @@
     font-size: 48px;
     font-weight: normal;
     letter-spacing: 5px;
-    font-family: 'Roboto', sans-serif;
+    font-family: $heading-font;
 }
 
 @mixin h2-styling {
     text-transform: uppercase;
     padding-top: 50px;
-    font-family: 'Roboto', sans-serif;
+    font-family: $heading-font;
     font-size: 30px;
     font-weight: normal;
 }

@@ -6,12 +6,14 @@
 
 /* IMPORTS */
 
+@import 'variables';
 @import 'layout';
 @import 'overlay';
 @import 'hover';
 @import 'animate';
 @import 'fonts';
 @import 'form';
+@import 'nav';
 
 /* FONTS */
 
@@ -27,112 +29,6 @@ body {
 html {
     width: 100%;
     height: 100%;
-}
-
-/* NAV */
-
-.slide-out-nav {
-    padding: 5px;
-    margin-top: 60px;
-    position: fixed;
-    background-color: #F9D99A;
-    text-align: center;
-}
-.sidenav {
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 999; /* Stay on top */
-    top: 0;
-    left: 0;
-    background-color: #000; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-}
-
-/* The navigation menu links */
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s
-}
-
-/* When you mouse over the navigation links, change their color */
-.sidenav a:hover, .offcanvas a:focus{
-    color: #f1f1f1;
-}
-
-/* Position and style the close button (top right corner) */
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-}
-
-/* Google Icons */
-
-.material-icons.md-light { 
-    color: rgba(255, 255, 255, 1); 
-    vertical-align: middle;
-}
-
-.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
-
-/* LAYOUT */
-
-.row-centered {
-    text-align: center;
-}
-
-.col-centered {
-    display:inline-block;
-    float:none;
-    /* reset the text-align */
-    text-align:center;
-    /* inline-block space fix */
-    margin-right:-4px;
-    padding-left: 320px;
-    padding-right: 320px;
-}
-
-.col-quote {
-    display:inline-block;
-    float:none;
-    /* reset the text-align */
-    text-align:center;
-    /* inline-block space fix */
-    margin-right:-4px;
-    padding-left: 250px;
-    padding-right: 250px;
-}
-
-.carousel-caption {
-    padding-bottom: 100px;
-    
-}
-
-.carousel-caption h3 {
-    padding-bottom: 50px;
-    font-family: 'Roboto',sans-serif;
-    font-weight: normal;
-    letter-spacing: 1px;
-    
-}
-
-.carousel-caption p {
-    padding-top: 50px;
 }
 
 /* INTRO */
@@ -242,7 +138,7 @@ figure {
 /* FIND OUT MORE */
 
 .grey-bg {
-    background-color: #979BA3;
+    background-color: $grey;
     width: 100%;
     height: 320px;
     margin-top: 0px;
@@ -252,7 +148,7 @@ figure {
 }
 
 .light-grey-bg {
-    background-color: #F5F5F5;
+    background-color: $offwhite;
     width: 100%;
     height: 320px;
     margin-top: 0px;
@@ -409,7 +305,7 @@ a.navy {
 
 footer {
     @include body-padding;
-    background-color: #2A2D3B;
+    background-color: $navy;
     color: #fff;
     padding-top: 50px;
     padding-bottom: 50px;

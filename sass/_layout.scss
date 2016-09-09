@@ -22,3 +22,42 @@
     padding: 0 !important;
     margin: 0 !important;
 }
+
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:center;
+    /* inline-block space fix */
+    margin-right:-4px;
+    padding-left: 320px;
+    padding-right: 320px;
+}
+
+.col-quote {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:center;
+    /* inline-block space fix */
+    margin-right:-4px;
+    padding-left: 250px;
+    padding-right: 250px;
+}
+
+.carousel-caption {
+    padding-bottom: 100px;
+    
+}
+
+.carousel-caption h3 {
+    padding-bottom: 50px;
+    font-family: 'Roboto',sans-serif;
+    font-weight: normal;
+    letter-spacing: 1px;
+    
+}
+
+.carousel-caption p {
+    padding-top: 50px;
+}

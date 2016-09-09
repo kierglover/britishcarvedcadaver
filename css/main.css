@@ -4,6 +4,8 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 /* IMPORTS */
+/* FONTS */
+/* COLORS */
 /*!
  * Layout.scss
  * Version: 1
@@ -18,6 +20,38 @@
  */
 @import url(https://fonts.googleapis.com/css?family=Lato);
 @import url(https://fonts.googleapis.com/css?family=Roboto);
+.col-centered {
+  display: inline-block;
+  float: none;
+  /* reset the text-align */
+  text-align: center;
+  /* inline-block space fix */
+  margin-right: -4px;
+  padding-left: 320px;
+  padding-right: 320px; }
+
+.col-quote {
+  display: inline-block;
+  float: none;
+  /* reset the text-align */
+  text-align: center;
+  /* inline-block space fix */
+  margin-right: -4px;
+  padding-left: 250px;
+  padding-right: 250px; }
+
+.carousel-caption {
+  padding-bottom: 100px; }
+
+.carousel-caption h3 {
+  padding-bottom: 50px;
+  font-family: 'Roboto',sans-serif;
+  font-weight: normal;
+  letter-spacing: 1px; }
+
+.carousel-caption p {
+  padding-top: 50px; }
+
 .image {
   margin-top: 90px;
   position: relative;
@@ -6377,6 +6411,91 @@ fieldset[disabled] .form-control {
   -webkit-transition: .25s linear;
   transition: .25s linear; }
 
+.navbar-default {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-family: "Lato", sans-serif;
+  background: #fff;
+  border: none; }
+
+.navbar-left {
+  margin-top: 8px; }
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #2A2D3B; }
+
+.navbar-default .navbar-text {
+  color: #979BA3; }
+
+.navbar-default .navbar-nav > li > a {
+  color: #979BA3; }
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #2A2D3B; }
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #2A2D3B;
+  background: transparent; }
+
+.navbar-default .navbar-nav > .open > a:hover {
+  color: #2A2D3B;
+  background: transparent; }
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background: transparent; }
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #2A2D3B; }
+
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #2A2D3B; }
+
+.navbar-default .navbar-link {
+  color: #2A2D3B; }
+
+.navbar-default .navbar-link:hover {
+  color: #2A2D3B; }
+
+.navbar-default .navbar-nav > .open > a {
+  background-color: transparent; }
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  font-size: 14px;
+  text-align: right;
+  list-style: none; }
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    background-color: transparent; }
+
+  .dropdown-menu {
+    text-align: left; }
+
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #2A2D3B; }
+
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    background-color: #2A2D3B; } }
 /* FONTS */
 body {
   width: 100%;
@@ -6389,106 +6508,6 @@ body {
 html {
   width: 100%;
   height: 100%; }
-
-/* NAV */
-.slide-out-nav {
-  padding: 5px;
-  margin-top: 60px;
-  position: fixed;
-  background-color: #F9D99A;
-  text-align: center; }
-
-.sidenav {
-  height: 100%;
-  /* 100% Full-height */
-  width: 0;
-  /* 0 width - change this with JavaScript */
-  position: fixed;
-  /* Stay in place */
-  z-index: 999;
-  /* Stay on top */
-  top: 0;
-  left: 0;
-  background-color: #000;
-  /* Black*/
-  overflow-x: hidden;
-  /* Disable horizontal scroll */
-  padding-top: 60px;
-  /* Place content 60px from the top */
-  transition: 0.5s;
-  /* 0.5 second transition effect to slide in the sidenav */ }
-
-/* The navigation menu links */
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s; }
-
-/* When you mouse over the navigation links, change their color */
-.sidenav a:hover, .offcanvas a:focus {
-  color: #f1f1f1; }
-
-/* Position and style the close button (top right corner) */
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px; }
-
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidenav {
-    padding-top: 15px; }
-
-  .sidenav a {
-    font-size: 18px; } }
-/* Google Icons */
-.material-icons.md-light {
-  color: white;
-  vertical-align: middle; }
-
-.material-icons.md-light.md-inactive {
-  color: rgba(255, 255, 255, 0.3); }
-
-/* LAYOUT */
-.row-centered {
-  text-align: center; }
-
-.col-centered {
-  display: inline-block;
-  float: none;
-  /* reset the text-align */
-  text-align: center;
-  /* inline-block space fix */
-  margin-right: -4px;
-  padding-left: 320px;
-  padding-right: 320px; }
-
-.col-quote {
-  display: inline-block;
-  float: none;
-  /* reset the text-align */
-  text-align: center;
-  /* inline-block space fix */
-  margin-right: -4px;
-  padding-left: 250px;
-  padding-right: 250px; }
-
-.carousel-caption {
-  padding-bottom: 100px; }
-
-.carousel-caption h3 {
-  padding-bottom: 50px;
-  font-family: 'Roboto',sans-serif;
-  font-weight: normal;
-  letter-spacing: 1px; }
-
-.carousel-caption p {
-  padding-top: 50px; }
 
 /* INTRO */
 .intro-section {
@@ -6603,14 +6622,14 @@ figure {
   font-size: 48px;
   font-weight: normal;
   letter-spacing: 5px;
-  font-family: 'Roboto', sans-serif; }
+  font-family: "Roboto", sans-serif; }
 
 .h1-white {
   color: #fff;
   font-size: 48px;
   font-weight: normal;
   letter-spacing: 5px;
-  font-family: 'Roboto', sans-serif; }
+  font-family: "Roboto", sans-serif; }
 
 /* IMG */
 .portrait {
@@ -6635,7 +6654,7 @@ h2 {
   color: #2A2D3B;
   text-transform: uppercase;
   padding-top: 50px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 30px;
   font-weight: normal; }
 
@@ -6643,7 +6662,7 @@ h2 {
   color: #666666;
   text-transform: uppercase;
   padding-top: 50px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 30px;
   font-weight: normal; }
 

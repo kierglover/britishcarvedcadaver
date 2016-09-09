@@ -1,0 +1,90 @@
+.navbar-default {
+  @include body-padding;
+  font-family: $secondary-font;
+  background: $white;
+  border: none;
+}
+
+.navbar-left {
+    margin-top: 8px;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: $navy;
+}
+.navbar-default .navbar-text {
+  color: $grey;
+}
+.navbar-default .navbar-nav > li > a {
+  color: $grey;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: $navy;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: $navy;
+  background: transparent;
+}
+.navbar-default .navbar-nav > .open > a:hover, {
+  color: $navy;
+  background: transparent;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background: transparent;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: $navy;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: $navy;
+}
+.navbar-default .navbar-link {
+  color: $navy;
+}
+.navbar-default .navbar-link:hover {
+  color: $navy;
+}
+
+.navbar-default .navbar-nav>.open> a {
+    background-color: transparent;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    font-size: 14px;
+    text-align: right;
+    list-style: none;
+}
+
+@media (max-width: 767px) {
+    
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+      background-color: transparent;
+  }
+    
+    .dropdown-menu {
+    text-align: left;
+    }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: $navy;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    background-color: $navy;
+  }
+}
