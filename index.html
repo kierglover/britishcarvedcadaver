@@ -188,28 +188,37 @@
                 </div>
             </div>
         </div>
-    </section>
     
     <!-- GOOGLE MAP -->
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-7" id="map">
-                    <script>
-                        function initMap() {
-                        var mapDiv = document.getElementById('map');
-                        var map = new google.maps.Map(mapDiv, {
-                        center: {lat: 44.540, lng: -78.546},
-                        zoom: 8
-                            });
-                        }
-                    </script>
-                </div>
-               <div class="col-sm-4">
+             <div class="row">
+               <div class="col-sm-7 col-justified wow fadeIn">
                    <h2 class="h2-navy">cadaver locoations</h2>
                    <p class="lead-first-para">Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque.</p>
                    <p class="cta-navy"><a class="navy" href="locations.html">see all locations</a></p>
                </div>
-            </div> <!-- ./row -->
+                <div class="col-sm-4 col-centered" id="map">
+                    <script>
+                        function initMap() {
+                        var mapDiv = document.getElementById('map');
+                        var map = new google.maps.Map(mapDiv, {
+                        center: {lat: 53.696706, lng: -1.625977},
+                        zoom: 6,
+                        styles: [{"featureType":"administrative","elementType":"all","stylers":[{"visibility":"on"},{"lightness":33}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2e5d4"}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#c5dac6"}]},{"featureType":"poi.park","elementType":"labels","stylers":[{"visibility":"on"},{"lightness":20}]},{"featureType":"road","elementType":"all","stylers":[{"lightness":20}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"color":"#c5c6c6"}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#e4d7c6"}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#fbfaf7"}]},{"featureType":"water","elementType":"all","stylers":[{"visibility":"on"},{"color":"#acbcc9"}]}]
+                            });
+                            
+                        var marker = new google.maps.Marker({
+                            position: {lat: 53.696706, lng: -1.625977},
+                            map: map,
+                            title: 'Hello World!'
+                        });
+                        
+                        
+                        
+                        }
+                    </script>
+                </div>
+            </div>
         </div> <!-- ./container -->
         
     <!-- KIND WORDS -->

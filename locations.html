@@ -89,7 +89,7 @@
             <div class="row">
                <div class="col-sm-12 col-quote col-centered" id="about">
                 <hr>
-                    <h2 class="h2-quote">DONEC FACILISIS TORTOR UT AUGUE LACINIA, AT VIVERRA EST SEMPER. SED SAPIEN METUS, SCELERISQUE NEC PHARETRA ID, TEMPOR A TORTOR. PELLENTESQUE NON DIGNISSIM NEQUE.</h2>
+                    <h2 class="h2-quote">donec facilisis tortor ut augue lacinia, at viverra est semper. sed sapien metus, scelerisque nec pharetra id, tempor a tortor. pellentesque non dignissim neque.</h2>
                 <hr>
                </div>
             </div>
@@ -103,9 +103,35 @@
                         function initMap() {
                         var mapDiv = document.getElementById('map-two');
                         var map = new google.maps.Map(mapDiv, {
-                        center: {lat: 44.540, lng: -78.546},
-                        zoom: 8
+                        center: {lat: 53.696706, lng: -1.625977},
+                        zoom: 8,
+                        styles: [{"featureType":"administrative","elementType":"all","stylers":[{"visibility":"on"},{"lightness":33}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2e5d4"}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#c5dac6"}]},{"featureType":"poi.park","elementType":"labels","stylers":[{"visibility":"on"},{"lightness":20}]},{"featureType":"road","elementType":"all","stylers":[{"lightness":20}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"color":"#c5c6c6"}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#e4d7c6"}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#fbfaf7"}]},{"featureType":"water","elementType":"all","stylers":[{"visibility":"on"},{"color":"#acbcc9"}]}]
                             });
+                            
+                        var marker = new google.maps.Marker({
+                        position: {lat: 53.696706, lng: -1.625977},
+                        map: map,
+                        title: 'Hello World!'
+                        });
+                            
+                        var contentString = '<div id="content">'+
+                            '<div id="siteNotice">'+
+                            '</div>'+
+                            '<h1 id="firstHeading" class="firstHeading">Cadaver One</h1>'+
+                            '<div id="bodyContent">'+
+                            '<p class="lead-other-para"><b>Cadaver One</b> Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque. Ut porta viverra est, ut dignissim elit elementum ut. Nunc vel rhoncus nibh, ut tincidunt turpis. Integer ac enim pellentesque, adipiscing metus id, pharetra odio. Donec bibendum nunc sit amet tortor scelerisque luctus et.</p>'+
+                            '<a class=navy href="#item1">find out more</a>'
+                            '</div>'+
+                            '</div>';
+                            
+                            var infowindow = new google.maps.InfoWindow({
+                            content: contentString
+                            });
+        
+                            marker.addListener('click', function() {
+                            infowindow.open(map, marker);
+                            });
+                            
                         }
                     </script>
                 </div>
