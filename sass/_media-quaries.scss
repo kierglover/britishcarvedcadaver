@@ -53,6 +53,18 @@
             
             padding: 0px;
         }
+        
+        .col-centered {
+            @include no-padding;
+        }
+        
+        #portrait {
+            display: none;
+        }
+        
+        #map {
+            display: none;
+        }
 
     }
 
