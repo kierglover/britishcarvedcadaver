@@ -101,74 +101,6 @@
                 <div class="col-lg-12 col-centered" id="map-two">
                    
                    <!-- MAP SCRIPTS -->
-                   
-                    <script>
-                        
-                        function initMap() {
-                        var mapDiv = document.getElementById('map-two');
-                        var map = new google.maps.Map(mapDiv, {
-                        center: {lat: 50.854826, lng: -0.553953},
-                        zoom: 8,
-                        styles: [{"featureType":"administrative","elementType":"all","stylers":[{"visibility":"on"},{"lightness":33}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2e5d4"}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#c5dac6"}]},{"featureType":"poi.park","elementType":"labels","stylers":[{"visibility":"on"},{"lightness":20}]},{"featureType":"road","elementType":"all","stylers":[{"lightness":20}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"color":"#c5c6c6"}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#e4d7c6"}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#fbfaf7"}]},{"featureType":"water","elementType":"all","stylers":[{"visibility":"on"},{"color":"#acbcc9"}]}]
-                            });
-                            
-                            // JOHN //
-                             
-                        var contentString = '<div id="content">'+
-                            '<div id="siteNotice">'+
-                            '</div>'+
-                            '<h1 id="firstHeading" class="firstHeading">John Fritzalan</h1>'+
-                            '<div id="bodyContent">'+
-                            '<p class="lead-other-para"><b>John Fritzalan</b> Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque. Ut porta viverra est, ut dignissim elit elementum ut. Nunc vel rhoncus nibh, ut tincidunt turpis. Integer ac enim pellentesque, adipiscing metus id, pharetra odio. Donec bibendum nunc sit amet tortor scelerisque luctus et.</p>'+
-                            '<a class=navy href="#item1">find out more</a>'
-                            '</div>'+
-                            '</div>';
-                            
-                            var infowindow = new google.maps.InfoWindow({
-                            content: contentString
-                            });
-                            
-                            var marker = new google.maps.Marker({
-                            position: {lat: 50.854826, lng: -0.553953},
-                            map: map,
-                            title: 'John Fitzalan (Fitzalan Chapel)'
-                            });
-        
-                            marker.addListener('click', function() {
-                            infowindow.open(map, marker);
-                            });
-                            
-                            // BISHOP PAUL BUSH //
-                            
-                            var contentString2 = '<div id="content">'+
-                            '<div id="siteNotice">'+
-                            '</div>'+
-                            '<h1 id="firstHeading" class="firstHeading">Bishop Paul Bush</h1>'+
-                            '<div id="bodyContent">'+
-                            '<p class="lead-other-para"><b>Bishop Paul Bush</b> Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque. Ut porta viverra est, ut dignissim elit elementum ut. Nunc vel rhoncus nibh, ut tincidunt turpis. Integer ac enim pellentesque, adipiscing metus id, pharetra odio. Donec bibendum nunc sit amet tortor scelerisque luctus et.</p>'+
-                            '<a class=navy href="#item1">find out more</a>'
-                            '</div>'+
-                            '</div>';
-                            
-                            var infowindow2 = new google.maps.InfoWindow({
-                            content: contentString2
-                            });
-                        
-                            var bishopPaulBush = new google.maps.Marker({
-                            position: {lat: 51.451745, lng: -2.600725},
-                            map: map,
-                            title: 'BishopPaulBush'
-                            });
-                            
-                            bishopPaulBush.addListener('click', function() {
-                            infowindow2.open(map, marker);
-                            });
-                            
-                        
-                        }
-                    </script>
-                    
-                    <!--./MAP SCRIPTS -->
                     
                 </div>
             </div>
@@ -320,6 +252,75 @@
     <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBufjXgPRxJNiWANO9bX6vpL9OtIDOJBpc&callback=initMap">
     </script>
+    
+    <script type="text/javascript">
+        
+    var markers = [
+    {
+        "title": 'John fitzalan',
+        "lat": '50.854871',
+        "lng": '-0.553913',
+        "description": 'John Fitzalan'
+    },
+    {
+        "title": 'Bishop Paul Bush',
+        "lat": '51.451771',
+        "lng": '-2.600671',
+        "description": 'Bishop Paul Bush'
+    },
+    {
+        "title": 'John Baret',
+        "lat": '52.242594',
+        "lng": '0.7181903',
+        "description": 'John Baret'
+    },
+    {
+        "title": 'Jijamata Udyan',
+        "lat": '52.209058',
+        "lng": '0.117358',
+        "description": 'Hugh Asheton'
+    },
+    {
+        "title": 'Sanjay Gandhi National Park',
+        "lat": '19.2147067',
+        "lng": '72.91062020000004',
+        "description": 'Sanjay Gandhi National Park is a large protected area in the northern part of Mumbai city.'
+    }
+    ];
+    window.onload = function () {
+        LoadMap();
+    }
+    function LoadMap() {
+        var mapOptions = {
+            center: new google.maps.LatLng(markers[0].lat, markers[0].lng),
+            zoom: 6,
+            styles: [{"featureType":"administrative","elementType":"all","stylers":[{"visibility":"on"},{"lightness":33}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2e5d4"}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#c5dac6"}]},{"featureType":"poi.park","elementType":"labels","stylers":[{"visibility":"on"},{"lightness":20}]},{"featureType":"road","elementType":"all","stylers":[{"lightness":20}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"color":"#c5c6c6"}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#e4d7c6"}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#fbfaf7"}]},{"featureType":"water","elementType":"all","stylers":[{"visibility":"on"},{"color":"#acbcc9"}]}]
+        };
+        var map = new google.maps.Map(document.getElementById("map-two"), mapOptions);
+ 
+        //Create and open InfoWindow.
+        var infoWindow = new google.maps.InfoWindow();
+ 
+        for (var i = 0; i < markers.length; i++) {
+            var data = markers[i];
+            var myLatlng = new google.maps.LatLng(data.lat, data.lng);
+            var marker = new google.maps.Marker({
+                position: myLatlng,
+                map: map,
+                title: data.title
+            });
+ 
+            //Attach click event to the marker.
+            (function (marker, data) {
+                google.maps.event.addListener(marker, "click", function (e) {
+                    //Wrap the content inside an HTML DIV in order to set height and width of InfoWindow.
+                    infoWindow.setContent("<div style = 'width:200px;min-height:40px'>" + data.description + "</div>");
+                    infoWindow.open(map, marker);
+                });
+            })(marker, data);
+        }
+    }
+</script>
 
     <!-- WOW JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
