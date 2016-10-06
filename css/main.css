@@ -6743,6 +6743,10 @@ a.navy {
 .archive-list {
   text-align: left; }
 
+.archive-item {
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
 /* LOCATIONS */
 #map {
   padding-left: 15px;
