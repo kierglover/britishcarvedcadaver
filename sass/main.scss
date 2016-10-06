@@ -186,12 +186,6 @@ figure {
 
 /* OTHER */
 
-h2 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 30px;
-    
-}
-
 .h2-navy {
     color: #2A2D3B;
     @include h2-styling;
@@ -200,7 +194,6 @@ h2 {
 .h2-quote {
     color: #666666;
     @include h2-styling;
-    text-transform: uppercase;
 }
 
 hr {
@@ -260,13 +253,15 @@ a.navy {
     font-style: italic;
 }
 
+.cta-white {
+    @include cta-styling;
+    color: #fff;
+    
+}
+
 .cta-navy {
-    font-family: 'Roboto', sans-serif;
+    @include cta-styling;
     color: #2A2D3B;
-    font-size: 18px;
-    text-transform: uppercase;
-    margin-top: 50px;
-    letter-spacing: 1px;
 }
 
 .fa {

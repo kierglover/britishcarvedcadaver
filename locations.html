@@ -101,74 +101,6 @@
                 <div class="col-lg-12 col-centered" id="map-two">
                    
                    <!-- MAP SCRIPTS -->
-                   
-                    <script>
-                        
-                        function initMap() {
-                        var mapDiv = document.getElementById('map-two');
-                        var map = new google.maps.Map(mapDiv, {
-                        center: {lat: 50.854826, lng: -0.553953},
-                        zoom: 8,
-                        styles: [{"featureType":"administrative","elementType":"all","stylers":[{"visibility":"on"},{"lightness":33}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2e5d4"}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#c5dac6"}]},{"featureType":"poi.park","elementType":"labels","stylers":[{"visibility":"on"},{"lightness":20}]},{"featureType":"road","elementType":"all","stylers":[{"lightness":20}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"color":"#c5c6c6"}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#e4d7c6"}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#fbfaf7"}]},{"featureType":"water","elementType":"all","stylers":[{"visibility":"on"},{"color":"#acbcc9"}]}]
-                            });
-                            
-                            // JOHN //
-                             
-                        var contentString = '<div id="content">'+
-                            '<div id="siteNotice">'+
-                            '</div>'+
-                            '<h1 id="firstHeading" class="firstHeading">John Fritzalan</h1>'+
-                            '<div id="bodyContent">'+
-                            '<p class="lead-other-para"><b>John Fritzalan</b> Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque. Ut porta viverra est, ut dignissim elit elementum ut. Nunc vel rhoncus nibh, ut tincidunt turpis. Integer ac enim pellentesque, adipiscing metus id, pharetra odio. Donec bibendum nunc sit amet tortor scelerisque luctus et.</p>'+
-                            '<a class=navy href="#item1">find out more</a>'
-                            '</div>'+
-                            '</div>';
-                            
-                            var infowindow = new google.maps.InfoWindow({
-                            content: contentString
-                            });
-                            
-                            var marker = new google.maps.Marker({
-                            position: {lat: 50.854826, lng: -0.553953},
-                            map: map,
-                            title: 'John Fitzalan (Fitzalan Chapel)'
-                            });
-        
-                            marker.addListener('click', function() {
-                            infowindow.open(map, marker);
-                            });
-                            
-                            // BISHOP PAUL BUSH //
-                            
-                            var contentString2 = '<div id="content">'+
-                            '<div id="siteNotice">'+
-                            '</div>'+
-                            '<h1 id="firstHeading" class="firstHeading">Bishop Paul Bush</h1>'+
-                            '<div id="bodyContent">'+
-                            '<p class="lead-other-para"><b>Bishop Paul Bush</b> Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque. Ut porta viverra est, ut dignissim elit elementum ut. Nunc vel rhoncus nibh, ut tincidunt turpis. Integer ac enim pellentesque, adipiscing metus id, pharetra odio. Donec bibendum nunc sit amet tortor scelerisque luctus et.</p>'+
-                            '<a class=navy href="#item1">find out more</a>'
-                            '</div>'+
-                            '</div>';
-                            
-                            var infowindow2 = new google.maps.InfoWindow({
-                            content: contentString2
-                            });
-                        
-                            var bishopPaulBush = new google.maps.Marker({
-                            position: {lat: 51.451745, lng: -2.600725},
-                            map: map,
-                            title: 'BishopPaulBush'
-                            });
-                            
-                            bishopPaulBush.addListener('click', function() {
-                            infowindow2.open(map, marker);
-                            });
-                            
-                        
-                        }
-                    </script>
-                    
-                    <!--./MAP SCRIPTS -->
                     
                 </div>
             </div>
@@ -277,7 +209,7 @@
        
         <div class="container">
             <div class="row-centered">
-                <div class="col-sm-12" id="about-page-cta">
+                <div class="col-sm-12 col-centered" id="about-page-cta">
                     <i class="fa fa-arrow-circle-left fa-1x hvr-skew-backward" aria-hidden="true"><a class="navy" href="index.html"> Back to main site</a></i>
                 </div>
             </div>
@@ -293,7 +225,7 @@
                             <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
                             <i class="fa fa-pinterest fa-2x" aria-hidden="true"></i>
                             <p class="lead-white">Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque. Ut porta viverra est, ut dignissim elit elementum ut. Nunc vel rhoncus nibh, ut tincidunt turpis. Integer ac enim pellentesque, adipiscing metus id, pharetra odio. Donec bibendum nunc sit amet tortor scelerisque luctus et.</p>
-                            <p class="lead-white"><a href="http://www.simplybespoke.co">SITE BY SIMPLYBESPOKE</a></p>
+                            <p class="lead-white"><a href="http://www.kieranglover.com">SITE BY KIERAN GLOVER</a></p>
                        </div>
                     </div>
                 </div>
@@ -320,6 +252,309 @@
     <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBufjXgPRxJNiWANO9bX6vpL9OtIDOJBpc&callback=initMap">
     </script>
+    
+    <script type="text/javascript">
+        
+    var markers = [
+    {
+        "title": 'John fitzalan',
+        "lat": '50.854871',
+        "lng": '-0.553913',
+        "description": 'John Fitzalan'
+    },
+    {
+        "title": 'Bishop Paul Bush',
+        "lat": '51.451771',
+        "lng": '-2.600671',
+        "description": 'Bishop Paul Bush'
+    },
+    {
+        "title": 'John Baret',
+        "lat": '52.242594',
+        "lng": '0.7181903',
+        "description": 'John Baret'
+    },
+    {
+        "title": 'Hugh Asheton',
+        "lat": '52.209036',
+        "lng": '0.117358',
+        "description": 'Hugh Asheton'
+    },
+    {
+        "title": 'Archbishop Henry Chichele',
+        "lat": '51.278925',
+        "lng": '1.083478',
+        "description": 'Archbishop Henry Chichele'
+    },
+    {
+        "title": 'Sir William West',
+        "lat": '51.522205',
+        "lng": '-0.102520',
+        "description": 'Sir William West'
+    },
+    {
+        "title": 'John Denston',
+        "lat": '52.146455',
+        "lng": '0.572319',
+        "description": 'John Denston'
+    },
+    {
+        "title": 'Unidentified',
+        "lat": '51.681154',
+        "lng": '-2.353109',
+        "description": 'Unidentified'
+    },
+    {
+        "title": 'Bishop John Alcock',
+        "lat": '52.398650',
+        "lng": '0.263785',
+        "description": 'Bishop John Alcock'
+    },
+    {
+        "title": 'Alice de le Pole',
+        "lat": '51.617750',
+        "lng": '-1.067461',
+        "description": 'Alice de le Pole'
+    },
+    {
+        "title": 'Unidentified',
+        "lat": '50.722529',
+        "lng": '-3.529903',
+        "description": 'Unidentified'
+    },
+    {
+        "title": 'William Sylke',
+        "lat": '50.722930',
+        "lng": '-3.530258',
+        "description": 'William Sylke'
+    },
+    {
+        "title": 'Unidentified',
+        "lat": '50.787438',
+        "lng": '-3.265824',
+        "description": 'Unidentified'
+    },
+    {
+        "title": 'Sir Marmaduke Constable',
+        "lat": '54.130963',
+        "lng": '-0.178608',
+        "description": 'Sir Marmaduke Constable'
+    },
+    {
+        "title": 'Unidentified',
+        "lat": '54.130963',
+        "lng": '-0.178608',
+        "description": 'Unidentified'
+    },
+    {
+        "title": 'John Careway',
+        "lat": '52.183340',
+        "lng": '0.222854',
+        "description": 'John Careway'
+    },
+    {
+        "title": 'Sir John Golafre',
+        "lat": '51.737515',
+        "lng": '0.276013',
+        "description": 'Sir John Golafre'
+    },
+    {
+        "title": 'Unidentified',
+        "lat": '53.767553',
+        "lng": '-0.979741',
+        "description": 'Unidentified'
+    },
+    {
+        "title": 'John Barton',
+        "lat": '52.476691',
+        "lng": '-0.250248',
+        "description": 'John Barton'
+    },
+    {
+        "title": 'Unidentified',
+        "lat": '51.651809',
+        "lng": '-0.752399',
+        "description": 'Unidentified'
+    },
+    {
+        "title": 'Unidentified',
+        "lat": '52.367107',
+        "lng": '-0.468639',
+        "description": 'Unidentified'
+    },
+    {
+        "title": 'Dean Thomas Heywood',
+        "lat": '52.685468',
+        "lng": '-1.830312',
+        "description": 'Dean Thomas Heywood'
+    },
+    {
+        "title": 'Bishop Richard Fleming',
+        "lat": '53.234265',
+        "lng": '-0.535997',
+        "description": 'Bishop Richard Fleming'
+    },
+    {
+        "title": 'Unidentified',
+        "lat": '51.025841',
+        "lng": '-2.970071',
+        "description": 'Unidentified'
+    },
+    {
+        "title": 'Unidentified',
+        "lat": '50.436748',
+        "lng": '-3.569861',
+        "description": 'Unidentified'
+    },
+    {
+        "title": 'Precentor Thomas Bennet',
+        "lat": '51.064898',
+        "lng": '-1.797311',
+        "description": 'Precentor Thomas Bennet'
+    },
+    {
+        "title": 'George Synden',
+        "lat": '51.064367',
+        "lng": '-1.797949',
+        "description": 'George Synden'
+    },
+    {
+        "title": 'Unidentified',
+        "lat": '51.506109',
+        "lng": '-0.089585',
+        "description": 'Unidentified'
+    },
+    {
+        "title": 'Unidentified',
+        "lat": '50.962511',
+        "lng": '-2.380810',
+        "description": 'Unidentified'
+    },
+    {
+        "title": 'John Wakema',
+        "lat": '51.990180',
+        "lng": '-2.160873',
+        "description": 'John Wakema'
+    },
+    {
+        "title": 'Sir Samson',
+        "lat": '53.278850',
+        "lng": '-1.772527',
+        "description": 'Sir Samson'
+    },
+    {
+        "title": 'Archbishop William Sponne',
+        "lat": '52.132296',
+        "lng": '-0.987361',
+        "description": 'Archbishop William Sponne'
+    },
+    {
+        "title": 'Bishop Thomas Bekington',
+        "lat": '51.210430',
+        "lng": '-2.643422',
+        "description": 'Bishop Thomas Bekington'
+    },
+    {
+        "title": 'John Carpent',
+        "lat": '51.493605',
+        "lng": '-2.616214',
+        "description": 'John Carpent'
+    },
+    {
+        "title": 'Bishop Richard Fox',
+        "lat": '51.060670',
+        "lng": '-1.313119',
+        "description": 'Bishop Richard Fox'
+    },
+    {
+        "title": 'Bishop Stephen Gardiner',
+        "lat": '51.060973',
+        "lng": '-1.314460',
+        "description": 'Bishop Stephen Gardiner'
+    },
+    {
+        "title": 'Sir Henry Willoughby',
+        "lat": '52.953026',
+        "lng": '-1.220051',
+        "description": 'Sir Henry Willoughby'
+    },
+    {
+        "title": 'Sir Richard Willoughby',
+        "lat": '52.952881',
+        "lng": '-1.220282',
+        "description": 'Sir Richard Willoughby'
+    },
+    {
+        "title": 'Sir Roger Rockley',
+        "lat": '53.519170',
+        "lng": '-1.474102',
+        "description": 'Sir Roger Rockley'
+    },
+    {
+        "title": 'Dean Thomas Haxey',
+        "lat": '53.962317',
+        "lng": '-1.081932',
+        "description": 'Dean Thomas Haxey'
+    },
+    {
+        "title": 'Unidentified',
+        "lat": '51.495709',
+        "lng": '-3.217941',
+        "description": 'Unidentified'
+    },
+    {
+        "title": 'Unidentified',
+        "lat": '52.080494',
+        "lng": '-4.679764',
+        "description": 'Unidentified'
+    },
+    {
+        "title": 'Unidentified',
+        "lat": '51.671727',
+        "lng": '-4.699392',
+        "description": 'Unidentified'
+    },
+    {
+        "title": 'Archbishop Laurence Booth',
+        "lat": '53.076822',
+        "lng": '-0.954168',
+        "description": 'Archbishop Laurence Booth'
+    },
+    ];
+    window.onload = function () {
+        LoadMap();
+    }
+    function LoadMap() {
+        var mapOptions = {
+            center: new google.maps.LatLng(markers[0].lat, markers[0].lng),
+            zoom: 6,
+            styles: [{"featureType":"administrative","elementType":"all","stylers":[{"visibility":"on"},{"lightness":33}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2e5d4"}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#c5dac6"}]},{"featureType":"poi.park","elementType":"labels","stylers":[{"visibility":"on"},{"lightness":20}]},{"featureType":"road","elementType":"all","stylers":[{"lightness":20}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"color":"#c5c6c6"}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#e4d7c6"}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#fbfaf7"}]},{"featureType":"water","elementType":"all","stylers":[{"visibility":"on"},{"color":"#acbcc9"}]}]
+        };
+        var map = new google.maps.Map(document.getElementById("map-two"), mapOptions);
+ 
+        //Create and open InfoWindow.
+        var infoWindow = new google.maps.InfoWindow();
+ 
+        for (var i = 0; i < markers.length; i++) {
+            var data = markers[i];
+            var myLatlng = new google.maps.LatLng(data.lat, data.lng);
+            var marker = new google.maps.Marker({
+                position: myLatlng,
+                map: map,
+                title: data.title
+            });
+ 
+            //Attach click event to the marker.
+            (function (marker, data) {
+                google.maps.event.addListener(marker, "click", function (e) {
+                    //Wrap the content inside an HTML DIV in order to set height and width of InfoWindow.
+                    infoWindow.setContent("<div style = 'width:200px;min-height:40px'>" + data.description + "</div>");
+                    infoWindow.open(map, marker);
+                });
+            })(marker, data);
+        }
+    }
+</script>
 
     <!-- WOW JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
