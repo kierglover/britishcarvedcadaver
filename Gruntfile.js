@@ -24,7 +24,7 @@ module.exports = function(grunt) {
         
         concat: {
             js: {
-            src: ['js/bootstrap.min.js', 'js/jquery.easing.js', 'js/nav.js', 'js/scrolling-nav.js'],
+            src: ['js/jquery.easing.min.js', 'js/nav.js', 'js/scrolling-nav.js'],
             dest: 'dist/js/scripts.js',
             },
         // CONCATS MAIN CSS AND BOOTSTRAP MIN CSS //
