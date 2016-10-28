@@ -99,6 +99,18 @@ html {
     padding-top: 20%;
 }
 
+.intro-section-item {
+    height: 100%;
+    background: url(/img/item-template-bg-overlay.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: center;
+    padding-top: 20%;
+	
+}
+
 
 /* ABOUT */
 
@@ -182,6 +194,19 @@ figure {
     margin: 5px;
     width: 375px;
     height: 631px;
+}
+
+/* Layout */
+
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:center;
+    /* inline-block space fix */
+    margin-right:-4px;
+    padding-left: 320px;
+    padding-right: 320px;
 }
 
 /* OTHER */

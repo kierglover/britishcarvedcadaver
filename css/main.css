@@ -6483,7 +6483,14 @@ fieldset[disabled] .form-control {
   margin: 2px 0 0;
   font-size: 14px;
   text-align: right;
-  list-style: none; }
+  list-style: none;
+  color: #979BA3; }
+
+.dropdown-menu > .active > a {
+  color: #fff;
+  text-decoration: none;
+  background-color: #979BA3;
+  outline: 0; }
 
 @media (max-width: 767px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
@@ -6574,6 +6581,16 @@ html {
   text-align: center;
   padding-top: 20%; }
 
+.intro-section-item {
+  height: 100%;
+  background: url(/img/item-template-bg-overlay.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  padding-top: 20%; }
+
 /* ABOUT */
 .about-section {
   height: 100%;
@@ -6648,6 +6665,17 @@ figure {
   margin: 5px;
   width: 375px;
   height: 631px; }
+
+/* Layout */
+.col-centered {
+  display: inline-block;
+  float: none;
+  /* reset the text-align */
+  text-align: center;
+  /* inline-block space fix */
+  margin-right: -4px;
+  padding-left: 320px;
+  padding-right: 320px; }
 
 /* OTHER */
 .h2-navy {
@@ -6804,7 +6832,11 @@ footer {
     display: none; }
 
   #map {
-    display: none; } }
+    display: none; }
+
+  .intro-section {
+    background: #000;
+    height: 75%; } }
 /* Extra Small Devices, Phones */
 /* Custom, iPhone Retina */
 

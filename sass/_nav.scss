@@ -67,6 +67,14 @@
     font-size: 14px;
     text-align: right;
     list-style: none;
+	color: $grey;
+}
+
+.dropdown-menu>.active>a {
+    color: #fff;
+    text-decoration: none;
+    background-color: $grey;
+    outline: 0;
 }
 
 @media (max-width: 767px) {

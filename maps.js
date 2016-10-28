@@ -14,7 +14,7 @@
                             '<h1 id="firstHeading" class="firstHeading">John Fritzalan</h1>'+
                             '<div id="bodyContent">'+
                             '<p class="lead-other-para"><b>John Fritzalan</b> Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque. Ut porta viverra est, ut dignissim elit elementum ut. Nunc vel rhoncus nibh, ut tincidunt turpis. Integer ac enim pellentesque, adipiscing metus id, pharetra odio. Donec bibendum nunc sit amet tortor scelerisque luctus et.</p>'+
-                            '<a class=navy href="#item1">find out more</a>'
+                            '<a class=navy href="item-template.html">find out more</a>'
                             '</div>'+
                             '</div>';
                             
@@ -40,7 +40,7 @@
                             '<h1 id="firstHeading" class="firstHeading">Bishop Paul Bush</h1>'+
                             '<div id="bodyContent">'+
                             '<p class="lead-other-para"><b>Bishop Paul Bush</b> Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque. Ut porta viverra est, ut dignissim elit elementum ut. Nunc vel rhoncus nibh, ut tincidunt turpis. Integer ac enim pellentesque, adipiscing metus id, pharetra odio. Donec bibendum nunc sit amet tortor scelerisque luctus et.</p>'+
-                            '<a class=navy href="#item1">find out more</a>'
+                            '<a class=navy href="item-template.html">find out more</a>'
                             '</div>'+
                             '</div>';
                             

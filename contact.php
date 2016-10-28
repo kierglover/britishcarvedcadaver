@@ -53,7 +53,7 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
+                <li><a href="index.html">Home</a></li>
                 <li class="dropdown">
                   <a href="about.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About<span class="caret"></span></a>
                   <ul class="dropdown-menu">
@@ -63,7 +63,7 @@
                   </ul>
                 </li>
                 <li><a href="locations.html">Locations</a></li>
-                <li><a href="contact.php">Contact</a></li>
+                <li class="active"><a href="contact.php">Contact<span class="sr-only">(current)</span></a></li>
               </ul>
             </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
